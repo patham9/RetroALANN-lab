@@ -82,14 +82,14 @@ public class ConceptMonitor {
     public static Sentence strongestPrecondition(final Nar nar, final String conc, final String statement) {
         final Concept c = ConceptMonitor.concept(nar, conc);
         final Term st = stringToTerm(nar, statement);
-        if(c != null && st != null) {
+        /*if(c != null && st != null) {
             for(final Task t : c.executable_preconditions) {
                 if(CompoundTerm.replaceIntervals(t.getTerm()).equals(
                         CompoundTerm.replaceIntervals(st))) {
                     return t.sentence;
                 }
             }
-        }
+        }*/
         return null;
     }
     

@@ -289,7 +289,7 @@ public class EditorPanel extends JPanel {
         mindSettings.add(new EditorMode("Delete all desires") {
             @Override
             public void run() {
-                for(Concept c : s.nar.memory) {
+                /*for(Concept c : s.nar.memory) {
                     if(c.desires!=null && !c.desires.isEmpty()) {
                         c.desires.clear();
                     }
@@ -302,7 +302,7 @@ public class EditorPanel extends JPanel {
                     for(TaskLink T : toDelete) {
                         c.taskLinks.take(T);
                     }
-                }
+                }*/
             }
         });
         

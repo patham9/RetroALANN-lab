@@ -94,7 +94,7 @@ public class PongComplex extends Frame {
                 @Override
                 public List<Task> execute(Operation operation, Term[] args, Memory memory, Timable time) {
                     lastAction = 1;
-                    memory.allowExecution = false;
+                   // memory.allowExecution = false;
                     //System.out.println("Nar decide left");
                     return null;
                 }
@@ -107,7 +107,7 @@ public class PongComplex extends Frame {
                 @Override
                 public List<Task> execute(Operation operation, Term[] args, Memory memory, Timable time) {
                     lastAction = 2;
-                    memory.allowExecution = false;
+                  //  memory.allowExecution = false;
                     //System.out.println("Nar decide right");
                     return null;
                 }
